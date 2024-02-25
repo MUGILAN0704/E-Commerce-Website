@@ -1,0 +1,872 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* ................////////////// over all //////////////................ */
+.container{
+    min-height: 619px;
+    width: 100%;
+    padding-top: 94px;
+    background-color:transparent;
+    
+
+}
+@font-face{
+    font-family: font1;
+    src: url(./LOGOTYPE-Medium.ttf);
+}
+@font-face{
+    font-family: mu;
+    src: url(./Spicy\ Hotdog.ttf);
+}
+/* //////////////////////////////////////first/ */
+.first{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    
+}
+.first img{
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    
+   
+}
+.first p{
+    font-family: font1;
+    font-size: 50px;
+    
+}
+.first h6{
+    font-family:mu;
+    font-size: 30px;
+}
+
+/* //////////////////////////////////////second/ */
+.second{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 110px;
+    padding: 10px;
+
+    
+}
+.second p{
+    font-size: 25px;
+}
+.home{
+    position: relative;
+}
+.home i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    padding-top:10px;
+}
+input{
+    border: 3px solid black;
+    height: 40px;
+    width: 320px;
+    border-radius: 50px;
+    padding: 0px 40px 0px 10px;
+    
+}
+.head{
+    display: flex;
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+     
+}
+.second button{
+   border-right: 2px solid black;
+     border: none;
+     font-size: 25px;
+     padding-right: 30px;
+     background-color: white;
+}
+.fav:hover i{
+    cursor: pointer;
+}
+ /* ///////////////drop menu////////////////////// */
+ .dropmenu{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    
+}
+.dropmenu .mingle{
+    width: 100%;
+    
+}
+.dropmenu .single{
+    width: 100%;
+}
+.dropmenu .male{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+.dropmale a{
+color: white;
+}
+
+.dropmenu .connect{
+    display: flex;
+    width: 100%;
+    display: none;
+}
+.dropmenu .dropmale{
+    width:50%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.dropmenu .dropmale div{
+    padding: 5px;
+    text-align: center;
+    
+}
+.dropmenu .dropvideo video{
+    width:341px;
+    height: 400px;
+    object-fit: cover;
+}
+.dropmenu .male:hover ~ .connect{   /*---- changed ---- */
+    display: block;
+    display: flex;
+} 
+.connect:hover {       /*---- Newly added ---- */
+    display: flex;
+}
+
+/* ///////////drop two//////// */
+.dropmenu .single{
+    width: 100%;
+}
+.dropmenu .female{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.dropmenu .disconnect{
+    display: flex;
+    width: 100%;
+    display: none;
+}
+.dropmenu .dropfemale{
+    width:50%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.dropfemale a{
+    color: white;
+    }
+.dropmenu .dropfemale div{
+    padding: 5px;
+    text-align: center;
+}
+.dropmenu .dropfemvideo video{
+    width:341px;
+    height: 400px;
+    object-fit: cover;
+}
+.dropmenu .female:hover~.disconnect{   /*---- changed ---- */
+    display: block;
+    display: flex;
+}
+.disconnect:hover {  /*---- Newly added ---- */
+    display: flex;
+}
+
+
+/* //////////////////////////////////content */
+.content{
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 80px 0px 40px 0px;
+
+}
+.aa img{
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    border: 2px solid black;
+    padding: 10px;
+    
+
+}
+.aa:hover img{
+    border: 5px double black;
+    cursor: pointer;
+    
+}
+.aa p{
+    font-weight:bold;
+}
+
+
+/* ////////////////////////////////////poster */
+.post img{
+  width: 100%;
+  height: 400px;
+}
+.poster{
+     display: grid;
+      grid-template-columns: auto auto auto;
+      
+  
+    background-color:white;
+}
+/* ////////////////////////////////////poster */
+.add img{
+    width: 100%;
+    height: 400px;
+  }
+  .vibeadd{
+       display: grid;
+        grid-template-columns: auto auto auto;
+      background-color:white;
+  }
+  /* //////////////////////////////////// video */
+ 
+  .postvideo video{
+    /* position:absolute; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width:100%;
+    height: 400px;
+    display: none;
+    object-fit: co;
+    
+   
+    
+}
+
+/* ////////////////////////////////////form */
+.form{
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 60px 0px 50px 0px;
+    
+}
+.bb img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+.bb p{
+padding: 20px 0px 20px 0px;
+font-size: 20px;
+}
+.bb img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+/* .bb:hover p{
+    transition: 1s;
+    font-weight: bold;
+} */
+
+/* //////////////////////////////////// poster */
+.ar img{
+    width: 100%;
+    height: 400px;
+  }
+
+.cal img{
+    width: 100%;
+    height: 400px;
+  }
+
+.artical{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      
+     
+      background-color:white;
+  }
+
+  /* //////////////////////////////////// video */
+
+.ti video{
+    /* position:absolute; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width:100%;
+    height: 400px;
+    display: block;
+   
+    
+}
+
+/* ////////////////////////////////////asses */
+.fasi{
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 60px 0px 50px 0px;
+    
+}
+.cc img{
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 50%;
+}
+.cc p{
+padding: 20px 0px 20px 0px;
+font-size: 20px;
+}
+.cc:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+ /* ///////////////////////////footer///////////////////////////// */
+ .fotter{
+    min-height: 380px;
+    width: 100%;
+    background-color: white;
+}
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-align:left;
+    padding-left: 50px;
+
+    
+   
+}
+.fot1{
+    width: 17%;
+    background-color:white;
+    line-height: 30px;
+    padding: 23px;
+    
+    
+}
+
+
+.fot1 h3{
+    padding: 17px 0px 10px 0px;
+}
+
+.fot2{
+    width: 17%;
+    background-color:white;
+    line-height: 30px;
+    padding: 23px;
+    
+}
+.fot2 h3{
+    padding: 20px 0px 10px 0px;
+}
+
+
+.fot3{
+    width: 17%;
+    background-color: white;
+    line-height: 30px;
+    padding: 23px;
+    
+}
+.fot3 h3{
+    padding: 20px 0px 10px 0px;
+}
+
+
+.fot4{
+    width: 17%;
+    background-color:white;
+    line-height: 30px;
+    padding: 23px;
+    
+}
+.fot4 h3{
+    padding: 20px 0px 10px 0px;
+}
+
+
+.fot5{
+    width: 33%;
+    background-color: white;
+    line-height: 30px;
+    padding: 23px;
+    
+
+    
+}
+.fot5 h2{
+    padding: 20px 0px 10px 0px;
+}
+.fot5 i{
+    font-size: 15px;
+    background-color:blue;
+    color: white;
+    border-radius: 50%;
+    padding: 05px;
+    
+}
+.fot5 h1{
+    padding: 20px 0px 20px 0px;
+    font-size: 27px;
+}
+.fot5 img{
+    height: 40px;
+    width: 150px;
+    border-radius: 05px;
+    border-top-right-radius: 05px;
+}
+.fot5 span{
+    padding: 0px 10px 0px 0px;
+}
+
+
+/* /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width:300px) and (max-width:500px) {
+    .container{
+        width: 100%;
+        padding-top: 118px;
+
+    }
+    /* first/ */
+    .head{
+        flex-direction: column;
+        width: 100%;
+    }
+    .first{
+        width:100%;
+        justify-content: center;
+        padding-top:5px;
+    }
+    .first img{
+        height:50px;
+        width: 50px;
+       
+    }
+    .first p{
+        font-size: 30px;
+        
+    }
+    .first h6{
+        font-size: 20px;
+    }
+
+    /* second  */
+    .second {
+        width: 100%;
+        gap:0px;
+        justify-content:center;
+        padding-bottom:5px;
+        
+    }
+    .home i{
+        font-size: 19px;
+    }
+
+    input {
+        height: 34px;
+        width:100%;
+    }
+    .second button{
+        padding-right: 10px;
+        font-size: 21px;
+        
+    }
+    .second .fav{
+        width: 100%;
+        display: none;
+    }
+
+    /* drop menu */
+    .dropmenu{
+       display:block;
+       
+    }
+    .dropmenu .male{
+        width: 100%;
+    }
+    .dropmenu .female{
+      width: 100%;
+
+    }
+    .dropmenu .dropvideo video{
+        display: none;
+    }
+    .dropmenu .dropfemvideo video{
+        display: none;
+    }
+    .dropmenu{
+        display: flex;
+    }
+    .dropmenu .dropmale{
+        width:100%;
+    }
+    .dropmenu .dropfemale{
+        width:100%;
+    }
+      
+    
+
+    /* content */
+
+    .content{
+        padding: 70px 0px 40px 0px;
+        grid-template-columns: auto auto;
+    }
+    .content .aa{
+        padding-bottom: 10px;
+    }
+
+    /* poster */
+    .poster{
+
+    }
+    .post img{
+        height:200px;
+    }
+    /* poster  */
+    .ar img{
+        width: 100%;
+        height: 200px;
+      }
+    
+    .cal img{
+        width: 100%;
+        height: 200px;
+      }
+      .ti video{
+        height: 200px;
+    }
+
+    /* form */
+    .form{
+        grid-template-columns: auto;
+    }
+    .bb img{
+        height: 150px;
+        width: 150px;
+    }
+   
+
+    /* assess */
+    .fasi{
+        grid-template-columns: auto;
+    }
+    .cc img{
+        height: 150px;
+        width: 150px;
+    }
+    /* poster/// */
+    .poster{
+        display: none;
+    }
+    .artical{
+        display: none;
+    }
+    .postvideo video{
+        display: block;
+        object-fit: contain;
+    }
+    
+    /* footer */
+    .bottom{
+        flex-direction: column;
+
+    }
+    .fot1,.fot2,.fot3,.fot4{
+        width: 50%;
+    }
+    .fot5{
+        width: 100%;
+        padding: 0;
+    }
+   
+    .bottom .fot1,.fot2,.fot3,.fot4,.fot5 h3{
+        padding: 0px 30px 0px 0px;
+        width: 100%;
+    }
+    .bottom{
+        padding:0px 0px 0px 50px;
+        
+    }
+    .offervideo video{
+        display:none;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .vibeadd{
+        display: none;
+    }
+    
+}
+
+
+
+    @media screen and (min-width:500px) and (max-width:800px) {
+        .container{
+            width: 100%;
+            padding-top: 118px;
+        }
+        /* first/ */
+        .head{
+            flex-direction: column;
+            width: 100%;
+        }
+        .first{
+            width:100%;
+            justify-content: center;
+            padding-top:5px;
+        }
+        .first img{
+            height:50px;
+            width: 50px;
+           
+        }
+        .first p{
+            font-size: 30px;
+            
+        }
+        .first h6{
+            font-size: 20px;
+        }
+    
+        /* second  */
+        .second {
+            width: 100%;
+            gap:0px;
+            justify-content:center;
+            padding-bottom:5px;
+            
+        }
+        .home i{
+            font-size: 19px;
+        }
+    
+        input {
+            height: 34px;
+            width:100%;
+        }
+        .second button{
+            padding-right: 10px;
+            font-size: 21px;
+            
+        }
+        .second .fav{
+            width: 100%;
+            display: none;
+        }
+
+         /* drop menu */
+    .dropmenu{
+        display:block;
+     }
+      /* drop menu */
+    .dropmenu{
+        display:block;
+        
+     }
+     .dropmenu .male{
+         width: 100%;
+     }
+     .dropmenu .female{
+       width: 100%;
+ 
+     }
+     .dropmenu .dropvideo video{
+         display: none;
+     }
+     .dropmenu .dropfemvideo video{
+         display: none;
+     }
+     .dropmenu{
+         display: flex;
+     }
+     .dropmenu .dropmale{
+         width:100%;
+     }
+     .dropmenu .dropfemale{
+         width:100%;
+     }
+     
+        /* content */
+
+    .content{
+        padding: 80px 0px 40px 0px;
+        grid-template-columns: auto auto auto;
+    }
+    .content .aa{
+        padding-bottom: 10px;
+    }
+
+     /* form */
+     .form{
+        grid-template-columns: auto auto;
+    }
+
+     /* assess */
+     .fasi{
+        grid-template-columns: auto auto;
+       
+        
+    }
+
+    /* footer */
+    .bottom{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+    }
+    .bottom .fot1,.fot2,.fot3,.fot4,.fot5 h3{
+        padding: 0px 0px 0px 0px ;
+    }
+    .bottom .fot1,.fot2,.fot3,.fot4,.fot5{
+        width:35%;
+    }
+    .fot5{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+         
+    }
+    .fot5 h2{
+        padding: 0px 10px 10px 0px;
+        text-align: center;
+       
+
+    }
+    /* offervideo */
+    
+  .offervideo video{
+    /* position:absolute; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width:100%;
+    height: 400px;
+    display:block;
+    object-fit: cover;
+}
+.artical{
+    display:none;
+}
+    }
+
+@media screen and (min-width:800px) and (max-width:1400px) {
+    /* first/ */
+    .first{
+        width: 40%;
+
+     }
+  
+    /* second */
+    .second{
+        width: 60%;
+        gap: 20px;
+    }
+    .second button{
+        padding-right: 15px;
+    }
+    
+    .home input{
+        width:100%;
+    }
+
+    /* .dropmenu */
+    .dropmenu .dropvideo video {
+        width: 100%;
+    }
+    .dropmenu .dropfemvideo video {
+        width: 100%;
+    }
+   
+    /* offervideo */
+    
+    .offvideo video{
+        /* position:absolute; */
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width:100%;
+        height: 400px;
+        display:block;
+        object-fit: cover;
+    }
+    .artical{
+        display:none;
+    }
+
+}
+
+
+@media screen and (min-width:1400px) {
+.vibeadd{
+    display: none;
+}
+
+}
+
+
+    
+
+    
+
+    
+  
+    
+
+
+
+
+
+
+
+
+
+
+

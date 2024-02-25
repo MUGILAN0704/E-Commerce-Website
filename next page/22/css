@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ................////////////// over all //////////////................ */
+.container{
+    min-height: 619px;
+    width: 100%;
+    padding-top: 94px;
+    background-color:transparent;
+    
+
+}
+@font-face{
+    font-family: font1;
+    src: url(./LOGOTYPE-Medium.ttf);
+}
+@font-face{
+    font-family: mu;
+    src: url(./Spicy\ Hotdog.ttf);
+}
+@font-face{
+    font-family:ok1;
+    src: url(./Mattew.otf)
+}
+@font-face{
+    font-family:ok2;
+    src: url(./mestgora.otf)
+}
+@font-face{
+    font-family:ok3;
+    src: url(./RAMEN\ ICHIKARU.otf)
+}
+@font-face{
+    font-family:ok4;
+    src: url(./Caroline\ Display.otf)
+}
+/* //////////////////////////////////////first/ */
+.first{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    
+}
+.first img{
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    
+   
+}
+.first p{
+    font-family: font1;
+    font-size: 50px;
+    
+}
+.first h6{
+    font-family:mu;
+    font-size: 30px;
+}
+
+/* //////////////////////////////////////second/ */
+.second{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 110px;
+    padding: 10px;
+
+    
+}
+.second p{
+    font-size: 25px;
+}
+.home{
+    position: relative;
+}
+.home i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    padding-top:10px;
+}
+input{
+    border: 3px solid black;
+    height: 40px;
+    width: 320px;
+    border-radius: 50px;
+    padding: 0px 40px 0px 10px;
+    
+}
+.head{
+    display: flex;
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+     
+}
+.second button{
+   border-right: 2px solid black;
+     border: none;
+     font-size: 25px;
+     padding-right: 30px;
+     background-color: white;
+}
+.fav:hover i{
+    cursor: pointer;
+}
+
+ /* product ////// */
+  
+
+ .product{
+    padding: 20px;
+    display: flex;
+    gap: 143px;
+    flex-wrap: wrap;
+  }
+  .product .cards{
+    display: inline-block;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+  }
+  .cards img{
+      height: 300px;
+      width: 300px;
+  }
+  .cards h1{
+    font-size: 25px;
+  }
+  .cards h2{
+    font-size: 25px;
+    padding: 05px;
+    font-family:ok5;
+        
+  } 
+  .cards h3{
+    display: inline-block;
+    font-family:ok2;
+    color:red;
+  }
+  .cards h4{
+    font-size: 20px;
+    color:gold;
+    padding: 2px;
+
+  }
+  .cards span{
+    font-family: none;
+    color:black;
+  }
+  .cards p{
+    padding: 05px;
+  }
+  .cards h5{
+    font-size: 30px;
+  }
+  .divine{
+    display: flex;
+    justify-content: space-between;
+  }
+  .divine:hover h5{
+    color: red;
+  }
+
+/* /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width:300px) and (max-width:500px) {
+    .container{
+        width: 100%;
+        padding-top: 118px;
+
+    }
+    /* first/ */
+    .head{
+        flex-direction: column;
+        width: 100%;
+    }
+    .first{
+        width:100%;
+        justify-content: center;
+        padding-top:5px;
+    }
+    .first img{
+        height:50px;
+        width: 50px;
+       
+    }
+    .first p{
+        font-size: 30px;
+        
+    }
+    .first h6{
+        font-size: 20px;
+    }
+
+    /* second  */
+    .second {
+        width: 100%;
+        gap:0px;
+        justify-content:center;
+        padding-bottom:5px;
+        
+    }
+    .home i{
+        font-size: 19px;
+    }
+
+    input {
+        height: 34px;
+        width:100%;
+    }
+    .second button{
+        padding-right: 10px;
+        font-size: 21px;
+        
+    }
+    .second .fav{
+        width: 100%;
+        display: none;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width:500px) and (max-width:800px) {
+    .container{
+        width: 100%;
+        padding-top: 118px;
+    }
+    /* first/ */
+    .head{
+        flex-direction: column;
+        width: 100%;
+    }
+    .first{
+        width:100%;
+        justify-content: center;
+        padding-top:5px;
+    }
+    .first img{
+        height:50px;
+        width: 50px;
+       
+    }
+    .first p{
+        font-size: 30px;
+        
+    }
+    .first h6{
+        font-size: 20px;
+    }
+
+    /* second  */
+    .second {
+        width: 100%;
+        gap:0px;
+        justify-content:center;
+        padding-bottom:5px;
+        
+    }
+    .home i{
+        font-size: 19px;
+    }
+
+    input {
+        height: 34px;
+        width:100%;
+    }
+    .second button{
+        padding-right: 10px;
+        font-size: 21px;
+        
+    }
+    .second .fav{
+        width: 100%;
+        display: none;
+    }
+
+
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+@media screen and (min-width:800px) and (max-width:1400px) {
+    /* first/ */
+    .first{
+        width: 40%;
+
+     }
+  
+    /* second */
+    .second{
+        width: 60%;
+        gap: 20px;
+    }
+    .second button{
+        padding-right: 15px;
+    }
+    
+    .home input{
+        width:100%;
+    }
+}
